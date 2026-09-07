@@ -1,0 +1,16 @@
+{
+  "partner_id": "1000667",
+  "partner_name": "Alp Corp",
+  "source": "/default/sap.s4/S4H",
+  "type": "Created",
+  "time": "08:30:00",
+  "date": "2026-06-07"
+  "address": [
+   {
+    "city_name": "Sopot",
+    "street_name": "Bohaterow Monte Cassino",
+    "door_number": "12",
+    "post_code": "81-314"
+	}
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "specversion": "1.0",
+  "id": "A6F1-8932-B831-0001",
+  "source": "/default/sap.s4/S4H",
+  "type": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+  "datacontenttype": "application/json",
+  "time": "2026-06-07T08:30:00Z",
+  "data": {
+    "BusinessPartner": "1000667",
+    "BusinessPartnerName": "Alp Corp",
+    "City": "1000667",
+    "Street": "1000667",
+    "DoorNumber": "1000667",
+    "Postcode": "1000667"
+  }
+}
