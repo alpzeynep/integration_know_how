@@ -29,7 +29,20 @@ def String Transform(String jsontextinp){
 
         builder{
 
-            id parsed.data.BusinessPartner
+            partner_id parsed.data.BusinessPartner
+            partner_name parsed.data.BusinessPartnerName
+            source parsed.source
+            type parsed.type
+            time parsed.time
+            date parsed.date
+            address([
+                {
+                    city_name parsed.data.City 
+                    street_name parsed.data.Street
+                    door_number parsed.data.DoorNumber 
+                    post_code parsed.data.Postcode 
+                }
+            ])
         }
 
         return builder.toString()
