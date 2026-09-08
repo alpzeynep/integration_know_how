@@ -31,14 +31,19 @@ def String Transform(String jsontextinp){
 
         def datePart = datetime[0]
 
-        def timePart = datetime[1].replace("Z","") 
+        def timePart = datetime[1].replace("Z","")
+
+        def typePart = parsed.type.split("\\.")
+        println(typePart)
+        def splittedType = typePart[6]
+
 
         builder{
 
             partner_id parsed.data.BusinessPartner
             partner_name parsed.data.BusinessPartnerName
             source parsed.source
-            type parsed.type
+            type splittedType
             time timePart
             date datePart
             address([
