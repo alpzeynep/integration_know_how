@@ -27,14 +27,20 @@ def String Transform(String jsontextinp){
 
         def builder = new JsonBuilder()
 
+        def datetime = parsed.time.split("T")
+
+        def datePart = datetime[0]
+
+        def timePart = datetime[1].replace("Z","") 
+
         builder{
 
             partner_id parsed.data.BusinessPartner
             partner_name parsed.data.BusinessPartnerName
             source parsed.source
             type parsed.type
-            time parsed.time
-            date parsed.date
+            time timePart
+            date datePart
             address([
                 {
                     city_name parsed.data.City 
@@ -45,7 +51,7 @@ def String Transform(String jsontextinp){
             ])
         }
 
-        return builder.toString()
+        return builder.toPrettyString()
 
     }
     catch(Exception e) {
